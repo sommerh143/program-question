@@ -13,15 +13,20 @@ $(document).ready(function(){
     year = parseInt($("#year").val());
     answer = parseInt(age + color + animal + game + year);
 
-    if (answer == 5){
+    if (answer >= 5 && answer <= 15){
       $(".questionAnswer").slideDown();
       $("span").append("C#");
-    } else if (answer <= 5){
+      $(".c").show();
+    } else if (answer >= 16 && answer <= 20){
       $(".questionAnswer").slideDown();
       $("span").append("Ruby");
-    } else if (answer == 6){
+      $(".ruby").show();
+
+    } else if (answer >=21 && answer <= 25){
         $(".questionAnswer").slideDown();
         $("span").append("Python");
+        $(".python").show();
+
     }
     
     $("#finish").click(function(){
