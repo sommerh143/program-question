@@ -2,7 +2,14 @@ $(document).ready(function(){
   $("#start").click(function(){
     $(".question").slideDown();
   });
-  var age = $("#age").val();
-  var color = $("#color").val();
-  var animal = $("#animal").val();
+ var age, color, animal;
+
+  $("#finish").click(function(){
+  
+  age = $("#age").val();
+  color = $("#color").val();
+  animal = $("#animal").val();
+  alert(age);
+  
+})
 });
