@@ -15,17 +15,40 @@
         <button id="start" class="btn-submit">Start Quiz!</button>
       </div>
       <div class="row">
-        <div class="col-md-3">
-          <div class="question">
+        <div class="question">
+          <div class="col-md-3">
             <h3>What is your age?</h3>
-            <form id="how old are you?">
-              <div class="radio" name="age" >
-
-              </div>
-            </form>
+            <select class="form-control" id="age">
+              <option value="1">0-11</option>
+              <option value="2">12-19</option>
+              <option value="3">20-30</option>
+              <option value="4">31-50</option>
+              <option value="5">51+</option>
+            </select>  
           </div>
+        <div class="col-md-3">
+          <h3>what is your favorite color?</h3>
+          <select class="form-control" id="color">
+            <option value="1">Green</option>
+            <option value="2">Red</option>
+            <option value="3">Blue</option>
+            <option value="4">Black</option>
+            <option value="5">White</option>
+          </select>  
         </div>
-      </div>
+        <div class="col-md-3">
+          <h3>what is your favorite animal?</h3>
+          <select class="form-control" id="animal">
+            <option value="1">Lion</option>
+            <option value="2">Bird</option>
+            <option value="3">Fish</option>
+            <option value="4">Dog</option>
+            <option value="5">Cat</option>
+          </select>  
+        </div>
+        <button id="finish" class="btn-submit">submit</button>
+       </div>
+     </div>
     </div>
   </body>
 </html>
